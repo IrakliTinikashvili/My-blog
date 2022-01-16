@@ -1,0 +1,88 @@
+*{
+    box-sizing:border-box;
+}
+body {
+    background-color:rgb(238, 237, 237);
+    margin:0px;
+}
+button{
+    border:1px solid rgb(158, 157, 157);
+    padding:15px;
+    font-size:15px;
+    background-color:white;
+    height:50px;
+}
+button:hover{
+    cursor:pointer;
+    background-color:gray;
+}
+.flexForButton{
+    display:flex;
+    justify-content: space-between;
+    flex-direction:row;
+    align-items:center;
+}
+.firstContent{
+    display:flex;
+    flex-direction:column;
+    width:65%;
+}
+.secondContent{
+    display:flex;
+    flex-direction:column;
+    width:30%;
+}
+.mainContent{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.popularPosts{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin:auto;
+}
+.popularPosts:hover{
+    background-color:gray;
+}
+.previousButton{
+    color:white;
+    background-color:black;
+    border:none;
+    padding:15px 30px;
+    opacity:0.6;
+    margin:10px;
+}
+.previousButton:hover{
+    cursor:not-allowed;
+}
+.nextButton{
+    color:white;
+    background-color:black;
+    border:none;
+    padding:15px 30px;
+    margin:10px;
+}
+.lastFlex{
+    display:flex;
+    flex-direction:row;
+}
+@media only screen and (max-width: 480px) {
+    .hideForMobiles{
+        display:none;
+    }
+}
+@media only screen and (max-width: 980px) { 
+    .mainContent{
+        flex-direction:column;
+    }
+    .secondContent{
+        width:100%;
+    }
+    .firstContent{
+        width:100%;
+    }
+}
+
+    
